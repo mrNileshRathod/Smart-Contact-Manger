@@ -44,7 +44,7 @@ Users can register and log in to the website to access their personal dashboard.
 
 1. Clone the repository:
     ```bash
-    https://github.com/mrNileshRathod/Smart-Contatct-Manger.git
+    https://github.com/mrNileshRathod/Smart-Contact-Manger.git
     ```
 2. Navigate to the project directory:
     ```bash
