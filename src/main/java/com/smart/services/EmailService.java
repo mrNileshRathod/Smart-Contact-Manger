@@ -24,30 +24,11 @@ public class EmailService {
 	
 	@Value("$(spring.mail.username)")
 	private String fromEmailId;
-	
-	public boolean sendMail2(String to, String subject, String message) {
-		boolean isSent = false;
-		
-		try {
-			SimpleMailMessage mailMessage = new SimpleMailMessage();
-			
-			mailMessage.setFrom(fromEmailId);
-			mailMessage.setTo(to);
-			mailMessage.setSubject(subject);
-			mailMessage.setText(message);
-			
-			javaMailSender.send(mailMessage);
-			
-			isSent = true;
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-		
-		return isSent;
-	}
+
+	@Value("$(spring.mail.password)")
+	private String password;
 	
 	
-//	/*
 	public boolean sendMail(String to, String subject, String message) {
 		
 		boolean isMailSent = false;
@@ -66,7 +47,7 @@ public class EmailService {
 
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("nr1157161@gmail.com", "blju ordj wpdo gtnt");
+				return new PasswordAuthentication(fromEmailId, password);
 			}
 		});
 		
@@ -93,6 +74,5 @@ public class EmailService {
 		
 		return isMailSent;
 	}
-//	*/
 
 }
