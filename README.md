@@ -14,7 +14,7 @@
 
 Welcome to the Smart Contact Manager project! 
 
-This web-based application is designed to help users efficiently manage their contacts through a secure and user-friendly interface. Built with Spring Boot 3, the application leverages RESTful APIs to provide seamless interactions and robust backend support.
+This web-based application is designed to help users efficiently manage their contacts through a secure and user-friendly interface. Built with **Spring Boot 3**, the application leverages **RESTful APIs** to provide seamless interactions and robust backend support.
 
 Users can register and log in to the website to access their personal dashboard. Within the dashboard, users can perform **CRUD (Create, Read, Update, Delete)** operations on their contacts, ensuring that all contact information is up-to-date and easily accessible.
 
