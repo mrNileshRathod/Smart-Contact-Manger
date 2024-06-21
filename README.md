@@ -53,7 +53,7 @@ Users can register and log in to the website to access their personal dashboard.
 
 ## Configuration
 
-- Default Port is `8080`
+- Create a MySQL Database - `contactmanager`
 - Chnage you mail address and password in `application.properties`
   
 
